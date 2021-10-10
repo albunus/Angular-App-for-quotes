@@ -1,2 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-@import'~bootstrap/dist/css'
+@import'~bootstrap/dist/css/bootstrap.min.css';
+#intro{
+  background-color: rgb(212, 241, 232);
+  text-align: center;
+  font-size: 30px;
+  font-family: cursive;
+}
+*{
+  background-color: azure;
+  font-family: sans-serif;
+}

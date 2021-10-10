@@ -1,17 +1,29 @@
 <div class="container">
-  <h1>My Quotes</h1>
+  <h1>POLITIAN ECONOMIC MODELS</h1>
   <hr>
 
 <div class="row">
+  <div class="col-md-12">
+    <p id="intro">Hello... welcome to our platform <br>
+      If you are a politian, kindly create <br>
+       your economic model <br>
+      otherwise... vote vote vote <br>
+      for your favorite economic model. <br>
+      Your vote counts. <br>
+       Thank You.
+    </p>
+  </div>
+  </div>
+  <div class="row">
 <div class="col-md-6">
-  <ul>
+  <ol>
       <div *ngFor='let quote of quotes; let i = index'>
-        <li>{{quote.quoteName}}</li>
-            <button (click)='toggleDetails(i)'>Toggle Details</button>
+        <li><p>{{quote.name}}  {{quote.last}}</p></li>
+            <button (click)='toggleDetails(i)'>View Details</button>
 
         <app-quote-detail *ngIf='quote.showAuthorName' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
       </div>
-  </ul>
+  </ol>
 </div>
 <div class="col-md-6">
     <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
