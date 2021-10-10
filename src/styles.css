@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import'~bootstrap/dist/css/bootstrap.min.css';
+@import'/home/access/Desktop/Angular-App/node_modules/bootstrap/dist/css/bootstrap.min.css';
 #intro{
   background-color: rgb(212, 241, 232);
   text-align: center;
@@ -9,4 +9,8 @@
 *{
   background-color: azure;
   font-family: sans-serif;
+}
+#head{
+  text-align: center;
+  color: brown;
 }

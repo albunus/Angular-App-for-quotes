@@ -1,4 +1,20 @@
-<ul><li>{{quote.quoteName}}</li></ul>
+<ul>
+  <li>{{quote.quoteName}}</li>
+</ul>
 <p>Posted on {{quote.submitDate | date}}</p>
+<div class="row">
+  <div class="vote col-md-3">
+    <i (click)='likeButtonClick()' class="fas fa-thumbs-up fa-2x thumb-up"></i>
+    {{numberOfLikes}} &nbsp;&nbsp;&nbsp;
+  </div>
 
-<button (click)= 'quoteDelete(true)'>Delete</button>
+  <div class="vote1 col-md-3">
+    <i (click)='dislikeButtonClick()' class="fas fa-thumbs-down fa-2x thumb-down"></i>
+    {{numberOfDislikes}} <br><br>
+  </div>
+  <div class="col-md-3">
+    <button (click)='quoteDelete(true)'>Delete</button>
+  </div>
+</div>
+
+
