@@ -20,12 +20,13 @@
   <hr>
   </div>
   <div class="row">
-<div class="col-md-6 card" >
-  <ol>
-      <div *ngFor='let quote of quotes; let i = index' class="card-success">
+<div class="col-md-6" >
+  <ol class="card">
+      <div *ngFor='let quote of quotes; let i = index' class="card">
+        <div class="card cad">
         <li><p>{{quote.quoteName}}</p></li>
             <button (click)='toggleDetails(i)'>View Details</button>
-
+</div>
         <app-quote-detail *ngIf='quote.showAuthorName' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
       </div>
   </ol>
