@@ -5,20 +5,18 @@
 [Albunus](https://github.com/albunus)
 
 ## Description
- Thisis an application where politian/users can create quotes and have those quotes voted on whether they are terrible or are inspirational. 
+ Thesis an application where politian/users can create quotes and have those quotes voted on whether they are terrible or are inspirational. 
  
 ## Setup/Installation Requirements
 
-Live link to view the project 
+Live link to view the project https://albunus.github.io/Angular-App-for-quotes/
 
 ## Known Bugs
-implimentation challanges(implimenting  functionality), Error Drbugging
+implementation challenges(implementing  functionality), Error Debugging
 
 ## Technologies Used
-The technologies used include Angular, Bootstrap,HTML and CSS 
+The technologies used include Angular, Bootstrap,HTML and CSS
 
- ## Design for the project
- 
 
 ## Support and contact details
 📫 How to reach me **albunus.nyalita@student.moringaschool.com**
