@@ -2,37 +2,40 @@
   <h1 id="head">POLITICIANS ECONOMIC MODELS</h1>
   <hr>
 
-<div class="row">
-  <div class="col-md-4">
-  <img src="assets/image.png" alt="">
-  </div>
-  <div class="col-md-8">
-    <p id="intro">Hello... welcome to our platform <br>
-      If you are a politian, kindly create <br>
-       your economic model <br>
-      otherwise... vote vote vote <br>
-      for your favorite economic model. <br>
-      Your vote counts. <br>
-       Thank You.
+  <div class="row">
+    <div class="col-md-4">
+      <img src="assets/image.png" alt="">
+    </div>
+    <div class="col-md-8">
+      <p id="intro">Hello... welcome to our platform <br>
+        If you are a politian, kindly create <br>
+        your economic model <br>
+        otherwise... vote vote vote <br>
+        for your favorite economic model. <br>
+        Your vote counts. <br>
+        Thank You.
 
-    </p>
-  </div>
-  <hr>
+      </p>
+    </div>
+    <hr>
   </div>
   <div class="row">
-<div class="col-md-6" >
-  <ol class="card">
-      <div *ngFor='let quote of quotes; let i = index' class="card">
-        <div class="card cad">
-        <li><p>{{quote.quoteName}}</p></li>
+    <div class="col-md-6">
+      <ol class="card">
+        <div *ngFor='let quote of quotes; let i = index' class="card">
+          <div class="card cad">
+            <li>
+              <p>{{quote.quoteName}}</p>
+            </li>
             <button (click)='toggleDetails(i)'>View Details</button>
-</div>
-        <app-quote-detail *ngIf='quote.showAuthorName' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
-      </div>
-  </ol>
-</div>
-<div class="col-md-6">
-    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+          </div>
+          <app-quote-detail *ngIf='quote.showAuthorName' [quote]='quote' (isComplete)='deleteQuote($event,i)'>
+          </app-quote-detail>
+        </div>
+      </ol>
+    </div>
+    <div class="col-md-6">
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
   </div>
-</div>
 </div>
