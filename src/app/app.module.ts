@@ -7,7 +7,8 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { voteDirective } from './vote.directive'
+import { voteDirective } from './vote.directive';
+import { CountDatePipe } from './count-date.pipe'
 
 
 
@@ -17,13 +18,15 @@ import { voteDirective } from './vote.directive'
     QuoteComponent,
     QuoteDetailComponent,
     QuoteFormComponent,
-    voteDirective
+    voteDirective,
+    CountDatePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
 
   ],
   providers: [],

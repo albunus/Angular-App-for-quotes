@@ -2,6 +2,11 @@
 <ul>
   <li> posted by: <br>{{quote.name}}  {{quote.last}}- on {{quote.submitDate | date}}</li>
 </ul>
+<div>
+  <p id="date">
+    {{quote.submitDate|countDate}} days ago
+</p>
+</div>
 <div class="row">
   <div class="vote col-md-3">
     <i (click)='likeButtonClick()' class="fas fa-thumbs-up fa-2x thumb-up"></i>
