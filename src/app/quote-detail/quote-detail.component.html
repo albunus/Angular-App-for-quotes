@@ -1,7 +1,7 @@
+<div class="card " id="card">
 <ul>
-  <li> posted by::::{{quote.name}}  {{quote.last}}</li>
+  <li> posted by: <br>{{quote.name}}  {{quote.last}}- on {{quote.submitDate | date}}</li>
 </ul>
-<p>Posted on {{quote.submitDate | date}}</p>
 <div class="row">
   <div class="vote col-md-3">
     <i (click)='likeButtonClick()' class="fas fa-thumbs-up fa-2x thumb-up"></i>
@@ -15,6 +15,7 @@
   <div class="col-md-3">
     <button (click)='quoteDelete(true)'>Delete</button>
   </div>
+</div>
 </div>
 
 
