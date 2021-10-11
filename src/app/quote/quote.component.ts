@@ -9,10 +9,10 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote(1,"RAILA",'Unity key in achieving economic prosperity','BABA', new Date(2021,10,9)),
-    new Quote(2,"RUTO",'Bottom up economic model','SAMOI', new Date(2021,10,9)),
-    new Quote(3,"KALONZO",'Uchumi maradufu economic model','MUSYOKA', new Date(2021,3,9)),
-    new Quote(4,"MUSALIA",'Uchumi bora economic model','MUDAVADI', new Date(2021,10,9)),
+    new Quote(1,"RAILA",'Unity key in achieving economic prosperity--- An economic model is a simplified description of reality, designed to yield hypotheses about economic behavior that can be tested. ... Economic models generally consist of a set of mathematical equations that describe a theory of economic behavior.','BABA', new Date(2021,10,9)),
+    new Quote(2,"RUTO",'Bottom up economic model---An economic model is a simplified description of reality, designed to yield hypotheses about economic behavior that can be tested. ... Economic models generally consist of a set of mathematical equations that describe a theory of economic behavior.','SAMOI', new Date(2021,10,9)),
+    new Quote(3,"KALONZO",'Uchumi maradufu economic model---An economic model is a simplified description of reality, designed to yield hypotheses about economic behavior that can be tested. ... Economic models generally consist of a set of mathematical equations that describe a theory of economic behavior.','MUSYOKA', new Date(2021,3,9)),
+    new Quote(4,"MUSALIA",'Uchumi bora economic model---An economic model is a simplified description of reality, designed to yield hypotheses about economic behavior that can be tested. ... Economic models generally consist of a set of mathematical equations that describe a theory of economic behavior.','MUDAVADI', new Date(2021,10,9)),
 
   ];
 
