@@ -17,6 +17,8 @@ implementation challenges(implementing  functionality), Error Debugging
 ## Technologies Used
 The technologies used include Angular, Bootstrap,HTML and CSS
 
+##screenshot https://github.com/albunus/Angular-App-for-quotes/blob/master/src/assets/image1.png
+
 
 ## Support and contact details
 📫 How to reach me **albunus.nyalita@student.moringaschool.com**
