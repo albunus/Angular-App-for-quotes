@@ -23,7 +23,7 @@
 <div class="col-md-6">
   <ol>
       <div *ngFor='let quote of quotes; let i = index'>
-        <li><p>{{quote.name}}  {{quote.last}}</p></li>
+        <li><p>{{quote.quoteName}}</p></li>
             <button (click)='toggleDetails(i)'>View Details</button>
 
         <app-quote-detail *ngIf='quote.showAuthorName' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
